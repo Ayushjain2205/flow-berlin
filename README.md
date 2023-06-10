@@ -1,35 +1,17 @@
-## Getting Started
+# stamps!
 
-Create a project using this example:
+[![stamps-logo.jpg](https://i.postimg.cc/bvr9VBMk/stamps-logo.jpg)](https://postimg.cc/jWVfLZRS)
 
-```bash
-npx thirdweb create --template next-javascript-starter
-```
+A unified passport of “stamps!” from your beloved brands collected at unique locations.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Tech Stack :
 
-On `pages/_app.js`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
+We have created a mobile first web experience keeping in mind how a web first experience can help in mass adoption. The website is built using NextJs.
 
-### Deploy to IPFS
+Flow blockchain's unique architecture and features make it well-suited for handling the high transaction volume and scalability required for a mass adoption app centered around NFTs.
 
-Deploy a copy of your application to IPFS using the following command:
+We leverage the Niftory APIs to create a seamless walletless onboarding experience where the user is given a social login option and we create a wallet for them on the fly. Niftory APIs are also used to mint and transfer NFTs to the user’s wallet
 
-```bash
-yarn deploy
-```
+We are using nested NFTs on the unique network to create geo-tagged NFTs. Every parent NFT has nested child NFTs, these child NFTs are associated with the benefits that every brand provides. Once these benefits are claimed these child NFTs are marked as claimed.
 
-## Learn More
-
-To learn more about thirdweb and Next.js, take a look at the following resources:
-
-- [thirdweb React Documentation](https://docs.thirdweb.com/react) - learn about our React SDK.
-- [thirdweb JavaScript Documentation](https://docs.thirdweb.com/react) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com/react) - check our guides and development resources.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+[![stamps-cover-image.jpg](https://i.postimg.cc/VNJH0vzx/stamps-cover-image.jpg)](https://postimg.cc/rdL9v80j)

@@ -1,36 +1,38 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // using ./src/ dir
-    "./src/**/*.{js,ts,jsx,tsx}",
-    // using ./ dir
     "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    // add more paths here
+
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      keyframes: {
-        hide: {
-          from: { opacity: 1 },
-          to: { opacity: 0 },
+      colors: {
+        goldenrod: "#ffc022",
+        black: "#000",
+        gray: {
+          100: "#262626",
+          200: "rgba(0, 0, 0, 0.85)",
+          300: "rgba(0, 0, 0, 0.54)",
+          400: "rgba(0, 0, 0, 0.58)",
         },
-        slideIn: {
-          from: {
-            transform: "translateX(calc(100% + var(--viewport-padding)))",
-          },
-          to: { transform: "translateX(0)" },
-        },
-        swipeOut: {
-          from: { transform: "translateX(var(--radix-toast-swipe-end-x))" },
-          to: { transform: "translateX(calc(100% + var(--viewport-padding)))" },
-        },
+        orangered: "#f24e1e",
+        white: "#fff",
+        mediumblue: "#3a00e5",
       },
-      animation: {
-        hide: "hide 100ms ease-in",
-        slideIn: "slideIn 150ms cubic-bezier(0.16, 1, 0.3, 1)",
-        swipeOut: "swipeOut 100ms ease-out",
-      },
+      fontFamily: { "work-sans": "'Work Sans'" },
+    },
+    fontSize: {
+      base: "12px",
+      lg: "14px",
+      xl: "16px",
+      "2xl": "20px",
+      "3xl": "24px",
+      "4xl": "32px",
     },
   },
-  plugins: [require("daisyui")],
-};
+  plugins: [],
+}
