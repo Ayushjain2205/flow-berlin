@@ -1,52 +1,30 @@
-import { ConnectWallet } from "@thirdweb-dev/react";
-import styles from "../styles/Home.module.css";
+import React from "react";
+import Layout from "../Components/Layout";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://thirdweb.com/">thirdweb</a>!
-        </h1>
-
-        <p className={styles.description}>
-          Get started by configuring your desired network in{" "}
-          <code className={styles.code}>pages/_app.js</code>, then modify the{" "}
-          <code className={styles.code}>pages/index.js</code> file!
-        </p>
-
-        <div className={styles.connect}>
-          <ConnectWallet />
+    <Layout>
+      <div className="flex flex-col pt-[40px] gap-[20px] justify-center pb-[60px] pl-[60px] bg-[#D8FEE4]">
+        <div className="text-[64px]">&nbsp; space for</div>
+        <div className="flex items-center text-[96px] h-[166px] w-[600px] bg-[#CBB3F2] border-black border-[3px] rounded-[40px] pl-[32px]">
+          creativity.
         </div>
-
-        <div className={styles.grid}>
-          <a href="https://portal.thirdweb.com/" className={styles.card}>
-            <h2>Portal &rarr;</h2>
-            <p>
-              Guides, references and resources that will help you build with
-              thirdweb.
-            </p>
-          </a>
-
-          <a href="https://thirdweb.com/dashboard" className={styles.card}>
-            <h2>Dashboard &rarr;</h2>
-            <p>
-              Deploy, configure and manage your smart contracts from the
-              dashboard.
-            </p>
-          </a>
-
-          <a
-            href="https://portal.thirdweb.com/templates"
-            className={styles.card}
-          >
-            <h2>Templates &rarr;</h2>
-            <p>
-              Discover and clone template projects showcasing thirdweb features.
-            </p>
-          </a>
+        <div className="flex items-center text-[96px] h-[166px] w-[800px] bg-[#FEC7C7] border-black border-[3px] rounded-[40px] pl-[32px]">
+          ownership.
         </div>
-      </main>
-    </div>
+        <div className="flex items-center text-[96px] h-[166px] w-[1000px] bg-[#FFDD67] border-black border-[3px] rounded-[40px] pl-[32px]">
+          collaboration
+        </div>
+        <div className="flex flex-row justify-between items-center w-[1190px] mt-[40px]">
+          <div className="flex flex-row items-center gap-[10px]">
+            <img className="h-[74px] w-[74px]" src="/eigen-logo.svg" alt="" />
+            <span className="text-[64px] font-medium">eigen</span>
+          </div>
+          <div className="text-[36px] font-medium">by entropy labs.</div>
+        </div>
+      </div>
+    </Layout>
   );
-}
+};
+
+export default Home;
